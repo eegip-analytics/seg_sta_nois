@@ -3,8 +3,11 @@
 %structure. The fnamefile input is a text file containing the filenames
 %with paths to each of the *.set files to be loaded (one file per line).
 %From a bash terminal these file name text files can be created as follows:
-%for example...
-%'find . -type f -name "*-SEG*.set" > derivatives/seg_face_noise/code/misc/fnames.txt
+%for example...To Load all files on EEGlab: 
+
+%Use GitBash to find filenames and to copy names to a text files called fnames.txt
+%open the files location using cd and ls commands on GitBash
+%type: find . -type f -name "*-SEG*.set" > derivatives/seg_face_noise/code/misc/fnames.txt
 
 function [EEG,ALLEEG,CURRENTSET]=loadfnames(EEG,fnamefile)
 
